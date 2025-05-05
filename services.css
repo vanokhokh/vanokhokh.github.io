@@ -1,0 +1,190 @@
+body {
+    background-color: #F5F5F5;
+    animation-name: bodybb;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes bodybb{
+    from{background-color: rgb(162, 96, 40);}
+    to{background-color:#F5F5F5 ;}
+}
+@font-face {
+    font-family: "titlefont";
+    src: url(./fonts/font_for_title.ttf)
+}
+@font-face {
+    font-family: "textFont";
+    src: url(./fonts/font_for_texst.ttf);
+}
+.titleFont{
+    font-family:"titlefont";
+}
+.textFont{
+    font-family: "textFont";
+}
+.title_color{
+    color: rgb(162, 96, 40);
+}
+/*@@@@@@@@@@@@@@@@@@ - end of body - @@@@@@@@@@@@@@@@@@*/
+nav{
+    background-color: #F5F5F5;
+    animation-name: bodybb;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    box-shadow: 0 0 15px black;
+}
+ul a:hover{
+    background-color: rgb(26, 24, 24);
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    background-color: rgb(162, 96, 40) !important;
+    color: white !important;
+}
+.custom_title{
+    font-size: 50px;
+}
+.custom_tittle{
+    font-size: 25px;
+}
+.main_title{
+    margin-top: 120px;
+    animation-name: titlecolor;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+.main_page_paragraph{
+    animation-name: titlecolor !important;
+    animation-duration: 3s !important;
+    animation-timing-function: ease !important;
+}
+@keyframes titlecolor{
+    from{opacity: 0.0;}
+    to{opacity: 1.0;}
+}
+.imgtop{
+    animation-name: imgtop;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes imgtop{
+    from{position: relative; top: -300px; opacity: 0.0;}
+    to {position: relative; top: 0px; opacity: 1.0;}
+}
+.imgleft{
+    animation-name: imgleft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes imgleft{
+    from{position: relative; left: -200px; top: 200px; opacity: 0.0;}
+    to {position: relative; left: 0px; top: 0px; opacity: 1.0;}
+}
+.imgright{
+    animation-name: imgright;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes imgright{
+    from{position: relative; right: -200px; top: 200px; opacity: 0.0;}
+    to {position: relative; right: 0px; top: 0px; opacity: 1.0;}
+}
+.imgbotom{
+    animation-name: imgbotom;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes imgbotom{
+    from{position: relative; bottom: -300px; opacity: 0.0;}
+    to {position: relative; bottom: 0px; opacity: 1.0;}
+}
+.imgleft2{
+    animation-name: imgleft2;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes imgleft2{
+    from{position: relative; left: -200px; top: -200px; opacity: 0.0;}
+    to {position: relative; left: 0px; top: 0px; opacity: 1.0;}
+}
+.imgright2{
+    animation-name: imgright2;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes imgright2{
+    from{position: relative; right: -200px; top: -200px; opacity: 0.0;}
+    to {position: relative; right: 0px; top: 0px; opacity: 1.0;}
+}
+.footer_title{
+    color: rgb(162, 96, 40) !important;
+}
+.footer_buttom:hover{
+    color: rgb(162, 96, 40) !important;
+    transition-duration: 0.3s;
+}
+/*@@@@@@@@@@@@@@@ - start of tablet screen - @@@@@@@@@@@@@@@*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+   .navbar_title{
+    font-size: 30px !important;
+}
+.imgtop{
+    animation-name: imgtop;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes imgtop{
+    from{position: relative; right: -500px; opacity: 0.0;}
+    to {position: relative; right: 0px; opacity: 1.0;}
+}
+.imgleft{
+    animation-name: imgleft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes imgleft{
+    from{position: relative; left: -500px; opacity: 0.0;}
+    to {position: relative; left: 0px; opacity: 1.0;}
+}
+.imgright{
+    animation-name: imgleft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+.imgbotom{
+    animation-name: imgleft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+.imgleft2{
+    animation-name: imgtop;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+.imgright2{
+    animation-name: imgtop;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+.footer_buttom{
+    width: 50% !important;
+}
+.footer_paragraph{
+        font-size: 20px !important;
+}
+}
+/*@@@@@@@@@@@@@@@ - start of mobile screen - @@@@@@@@@@@@@@@*/
+@media screen and (max-width: 768px) {
+    .navbar_title{
+        padding: 0px !important;
+    }
+    .main_page_title{
+        font-size: 40px !important;
+    }
+    .footer_buttom{
+        width: 100% !important;
+    }
+    .five_page_para{
+        font-size: 30px !important;
+    }
+} 
+    

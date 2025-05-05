@@ -1,0 +1,163 @@
+body {
+    background-color: rgb(162, 96, 40);
+    animation-name: bodybg;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes bodybg{
+    from{background-color: #F5F5F5;}
+    to{background-color: rgb(162, 96, 40);}
+}
+@font-face {
+    font-family: "titlefont";
+    src: url(./fonts/font_for_title.ttf)
+}
+@font-face {
+    font-family: "textFont";
+    src: url(./fonts/font_for_texst.ttf);
+}
+.titleFont{
+    font-family:"titlefont";
+}
+.textFont{
+    font-family: "textFont";
+}
+/*@@@@@@@@@@@@@@@@@@ - end of body - @@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@ - start of main page - @@@@@@@@@@@@@@@@@@*/
+nav{
+    background-color: rgb(162, 96, 40);
+    animation-name: bodybg;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    box-shadow: 0px 0px 15px black;
+}
+.nav_svg{
+    padding: 5px !important;
+    background-color: black; 
+    border-radius: 15px; 
+    width: 45px; 
+    height: 45px;
+}
+ul a:hover{
+    background-color: rgb(26, 24, 24);
+    border-radius: 5px;
+}
+.navbar_upTodown{
+    animation-name: upTodown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes upTodown{
+    from{position: relative; top: -80px;}
+    to{position: relative; top: 0px;}
+}
+.sendvich{
+   border: 2px solid black !important;
+} 
+/*-------------------- end of navbar --------------------*/
+.custom_title{
+    font-size: 50px;
+}
+main{
+    margin-top: 150px !important;
+}
+.main_photo{
+    width: 100%;
+    height: 60vh;
+    background-image: url(./image/about_kitchen.avif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.ltoright{
+ animation-name: leftToright;
+ animation-duration: 2s;
+ animation-timing-function: ease;
+}
+@keyframes leftToright{
+    from{position: relative; left: -380px;}
+    to{position: relative; left: 0px;}
+}
+.rtoleft{
+    animation-name: rightToleft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes rightToleft{
+    from{position: relative; right: -380px}
+    to{position: relative; right: 0px;}
+}
+.footer_buttom:hover{
+    color: rgb(162, 96, 40) !important;
+}
+/*@@@@@@@@@@@@@@@@@@ - start of tablet screen - @@@@@@@@@@@@@@@@@@*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .navbar_title{
+        font-size: 30px !important;
+    }
+    .navbar_upTodown{
+        animation-duration: 0.5s !important;
+    }
+    .row_title{
+        font-size: 35px !important;
+    }
+    .row_para{
+        font-size: 20px !important;
+    }
+    .five_page_para{
+        font-size: 20px !important;
+    }
+    .footer_buttom{
+        width: 50% !important;
+    }
+    .footer_paragraph{
+        font-size: 20px !important;
+    }
+}
+/*@@@@@@@@@@@@@@@@@@ - start of mobile screen - @@@@@@@@@@@@@@@@@@*/
+@media screen and (max-width: 768px){
+    .nav_svg{
+        padding: 0px 5px !important;
+        margin: 0px !important;
+        background-color: black !important;
+        width: 30px !important;
+        height: 35px !important;
+    }
+    .sendvich{
+        border: 1px solid black !important;
+     }
+     .navbar_title{
+        padding: 0px !important;
+        font-size: 20px !important;
+    }
+    .navbar_container{
+        margin: 0px !important;
+    }
+    .navbar_upTodown{
+        animation-duration: 0.5s !important;
+    }
+    .main_photo{
+        height: 40vh !important; 
+        margin-left: 1px !important;
+    }
+    .custom_title {
+        font-size: 30px !important;
+        margin-top: 10px !important;
+    }
+    .main_page_para{
+        font-size: 15px !important;
+    }
+    .row_title{
+        font-size: 30px !important;
+    }
+    .row_para{
+        font-size: 20px !important;
+        color: white !important;
+    }
+    .five_page_para{
+        font-size: 20px !important;
+    }
+    .footer_buttom{
+        width: 100% !important;
+    }
+}

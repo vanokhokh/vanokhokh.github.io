@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(162, 96, 40);
+    animation-name: bodybc;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes bodybc{
+    from{background-color:#F5F5F5;}
+    to{background-color:rgb(162, 96, 40) ;}
+}
+@font-face {
+    font-family: "titlefont";
+    src: url(./fonts/font_for_title.ttf)
+}
+@font-face {
+    font-family: "textFont";
+    src: url(./fonts/font_for_texst.ttf);
+}
+.titleFont{
+    font-family:"titlefont";
+}
+.textFont{
+    font-family: "textFont";
+}
+/*@@@@@@@@@@@@@@@ - end of body - @@@@@@@@@@@@@@@*/
+nav{
+    background-color: rgb(162, 96, 40);
+    animation-name: bodybc;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    box-shadow: 0px 0px 15px black;
+}
+.nav_svg{
+    padding: 5px !important;
+    background-color: black; 
+    border-radius: 15px; 
+    width: 45px; 
+    height: 45px;
+}
+.sendvich{
+    border: 1px solid black !important;
+ }
+ul a:hover{
+    color: white !important;
+    background-color:rgb(40, 39, 39);
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+/*@@@@@@@@@@@@@@@ - end of navbar - @@@@@@@@@@@@@@@*/
+.main_page_p{
+    margin-top: 120px;
+}
+.smallBig{
+    animation-name: smallBig;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+.smallBig1{
+    animation-name: smallBig;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+}
+.smallBig2{
+    animation-name: smallBig;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+}
+.smallBig3{
+    animation-name: smallBig;
+    animation-duration: 8s;
+    animation-timing-function: ease;
+}
+.smallBig4{
+    animation-name: smallBig;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+}
+.smallBig5{
+    animation-name: smallBig;
+    animation-duration: 12s;
+    animation-timing-function: ease;
+}
+@keyframes smallBig{
+    from {position: relative; opacity: 0;}
+    to{position: relative; opacity: 1;}
+}
+.custom_title{
+    font-size: 40px;
+}
+.main_row_page div:hover{
+    filter: brightness(60%); 
+    transition-duration: 0.3s !important;
+}
+.footer_buttom:hover{
+    background-color: rgb(162, 96, 40) !important;
+    color: white !important;
+    transition-duration: 0.3s;
+}
+/*@@@@@@@@@@@@@@@ - start screen for tablet - @@@@@@@@@@@@@@@*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .nav_title{
+        font-size: 30px !important;
+    }
+    .footer_paragraph{
+        font-size: 20px !important;
+    }
+}
+/*@@@@@@@@@@@@@@@ - start screen for tablet - @@@@@@@@@@@@@@@*/
+@media screen and (max-width: 768px){
+    .navbar_title{
+        padding: 0px !important;
+    }
+     .nav_svg{
+        padding: 2px !important;
+        width: 35px; 
+        height: 35px;
+    }
+    .title_footer{
+        font-size: 30px !important;
+    }
+    .footer_paragraph{
+        font-size: 20px !important;
+    }
+    .footer_buttom{
+        width: 100% !important;
+    }
+}

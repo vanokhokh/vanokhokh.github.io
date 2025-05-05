@@ -1,0 +1,384 @@
+body {
+    background-color: #F5F5F5;
+}
+@font-face {
+    font-family: "titlefont";
+    src: url(./fonts/font_for_title.ttf)
+}
+@font-face {
+    font-family: "textFont";
+    src: url(./fonts/font_for_texst.ttf);
+}
+.titleFont{
+    font-family:"titlefont";
+}
+.textFont{
+    font-family: "textFont";
+}
+.title_color{
+    color: rgb(162, 96, 40);
+}
+/*@@@@@@@@@@@@@@@@@@ - end of body - @@@@@@@@@@@@@@@@@@*/
+nav{
+    background-color: #F5F5F5;
+    box-shadow: 0px 0px 15px black;
+}
+.nav_svg{
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes logo{
+        from{position:relative; left: 100%;}
+        to {position:relative; left: 0px;}
+}
+.navbar_title{
+    animation-name: title;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes title{
+    from {position: relative; left: -500px;}
+    to {position: relative; left: 0px;}
+}
+ nav a:hover, a:active{
+    color: white !important;
+    background-color: rgb(162, 96, 40) !important;
+    border-radius: 5px !important;
+}
+.nav_underlistst{
+    animation-name: lists;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes lists{
+    from {position: relative; right: -1000px;}
+    to {position: relative; right: 0px;}
+}
+/*@@@@@@@@@@@@@@@@@@ - end of navbar - @@@@@@@@@@@@@@@@@@*/
+.first_page_div{
+    width: 100%;
+    height: 80vh;
+    margin-top: 6em;
+    background-image: url(./image/house.avif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;  
+}
+.main_title{
+    font-size: 70px;
+    color: rgb(162, 96, 40) !important;
+    animation-name: mainTitle;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes mainTitle{
+    from{position: relative; top: -200px; opacity: 0;}
+    to{position: relative; top: 0px; opacity: 1;}
+}
+.main_page_button{
+    animation-name: mainButton;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes mainButton{
+    from{position: relative; bottom: -200px; opacity: 0;}
+    to{position: relative; bottom: 0px; opacity: 1;}
+}
+.main_page_button:hover{
+    background-color: rgb(162, 96, 40) !important;
+    font-size: 30px !important;
+    color: black;
+}
+/*@@@@@@@@@@@@@@@@@@ - end of first page - @@@@@@@@@@@@@@@@@@*/
+.second_page_photo{
+    width: 50%;
+    height: 70vh;
+    background-image: url(./image/kitchenn.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.second_page_button:hover {
+   font-size: 30px !important;
+   border-radius: 25px;
+   transition-duration: 0.5s;
+}
+/*@@@@@@@@@@@@@@@@@@ - end of second page - @@@@@@@@@@@@@@@@@@*/
+.third_page_title {
+    font-size: 50px !important;
+    animation-name: thirdtitle;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+@keyframes thirdtitle{
+    from {position: relative; opacity: 0.0;}
+    to {position: relative; opacity: 1.0;}
+}
+.third_para{
+    animation-name: third;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes third{
+    from{position: relative; top: 200px; opacity: 0;}
+    to{position: relative; top: 0px; opacity: 1;}
+}
+.third_para2{
+    animation-name: third2;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes third2{
+    from{position: relative; bottom: 200px; opacity: 0;}
+    to{position: relative; bottom: 0px; opacity: 1;}
+}
+/*@@@@@@@@@@@@@@@@@@ - end of third page - @@@@@@@@@@@@@@@@@@*/
+.fourth_page_title{
+    font-size: 50px;
+}
+.for_page_1photo{
+    background-image: url(./image/kitchenn.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+    position: relative;
+}
+.for_page_2photo{
+    background-image: url(./image/bathrooms.avif);
+    height: 70vh;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.for_page_3photo{
+    background-image: url(./image/interiors.avif);
+    height: 70vh;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.centerr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.for_page_button:hover{
+    background-color: rgba(162, 97, 40, 0.645);
+    color: black !important;
+}
+/*@@@@@@@@@@@@@@@@@@ - end of for page - @@@@@@@@@@@@@@@@@@*/
+.five_page_title{
+    font-size: 50px;
+}
+.five_svg{
+    width: 50px;
+    height: 50px;
+}
+/*@@@@@@@@@@@@@@@@@@ - end of five page - @@@@@@@@@@@@@@@@@@*/
+.six_page_title{
+    font-size: 50px;
+}
+.six_page_inputs input, textarea{
+    border: none;
+    border-bottom: 1px solid white !important;
+    outline: none;
+}
+.six_inputs input, textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white !important;
+}
+.footer_buttom{
+    width: 50%;
+}
+.footer_buttom:hover{
+background-color: rgb(162, 96, 40) !important; 
+color: white !important;  
+transition-duration: 0.2s;
+border-radius: 50px;
+}
+/*@@@@@@@@@@@@@@@@@@ - start of tablet screen - @@@@@@@@@@@@@@@@@@*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .navbar_title{
+        font-size: 30px !important;
+    }
+    .nav_svg{
+        width: 45px !important;
+        height: 55px !important;
+    }
+    .nav_underlistst{
+        animation-duration: 1s;
+    }
+    .main_title{
+        font-size: 60px !important;
+    }
+    .second_page_photo{
+        width: 100% !important;
+        height: 60vh !important;
+    }
+    .second_page_title{
+        font-size: 40px !important;
+    }
+    .second_page_paragraph{
+        font-size: 20px !important;
+    }
+    .second_page_button {
+        font-size: 30px !important;
+        padding: 5px 60px !important;
+     }
+    .fourth_page_title{
+        font-size: 40px !important;
+    }
+    .centerr{
+        font-size: 50px !important;
+    }
+    .for_page_images{
+        flex-wrap: wrap !important;
+    }
+    .for_page_1photo{
+        height: 70vh !important;
+        width: 99% !important;
+    }
+    .for_page_2photo{
+        height: 70vh !important;
+        width: 99% !important;
+    }
+    .for_page_3photo{
+        height: 70vh !important;
+        width: 99% !important;
+    }
+    .for_page_button{
+       width: 70% !important;
+    }
+    .five_paragraph{
+        font-size: 20px !important;
+    }
+    .six_paragraph{
+        font-size: 20px !important;
+    }
+    .six_inputs{
+        font-size: 20px !important;
+    }
+    .footer_buttom{
+        width: 50% !important;
+    }
+    .footer_paragraph {
+        font-size: 20px !important;
+    }
+    .footer_svg svg{
+        width: 40px !important;
+        height: 40px !important;
+        padding: 5px !important;
+    }
+    .footer_buttom{
+        width: 70% !important;
+    }
+}
+/*@@@@@@@@@@@@@@@@@@ - start of mobile screen - @@@@@@@@@@@@@@@@@@*/
+@media screen and (max-width: 768px){
+    .navbar_title{
+        padding: 0px !important;
+        font-size: 20px !important;
+    }
+    .navbar_container{
+        margin: 0px !important;
+    }
+    .nav_svg{
+        width: 30px !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    .sendvich{
+        width: 30px !important;
+    }
+    .nav_underlistst{
+        animation-duration: 1s;
+    }
+  
+    .first_page_div{
+        height: 60vh !important;
+        margin-top: 2em !important;
+    }
+    .main_title{
+        font-size: 40px !important;
+    }
+    .main_page_button{
+        font-size: 20px !important;
+        padding: 1em 2em !important ;
+        width: 100% !important;
+        
+    }
+    .second_page_photo{
+        width: 100% !important;
+        height: 50vh !important;
+    }
+    .second_page_button{
+        width: 100% !important;
+        font-size: 1em !important;
+        padding: 1em 1em !important
+    }
+    .third_page_title{
+        font-size: 40px !important;
+        padding-bottom: 0px !important;
+    }
+
+    @keyframes third{
+        from{position: relative; left: 300px; opacity: 0;}
+        to{position: relative; left: 0px; opacity: 1;}
+    }
+    @keyframes third2{
+        from{position: relative; right: 300px; opacity: 0;}
+        to{position: relative; right: 0px; opacity: 1;}
+    }
+    .fourth_page_title{
+        font-size: 30px !important;
+    }
+    .centerr{
+        font-size: 50px !important;
+    }
+    .for_page_images{
+        flex-wrap: wrap !important;
+    }
+    .for_page_1photo{
+        height: 50vh !important;
+        width: 99% !important;
+    }
+    .for_page_2photo{
+        height: 50vh !important;
+        width: 99% !important;
+    }
+    .for_page_3photo{
+        height: 50vh !important;
+        width: 99% !important;
+    }
+    .for_page_button{
+        width: 100% !important;
+        font-size: 25px !important;
+        border-radius: 0px !important;
+        padding: 10px 10px !important;
+     }
+     .five_page_title{
+        font-size: 35px !important;
+    }
+    .five_svg{
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .five_paragraph{
+        font-size: 20px !important;
+    }
+    .six_page_title{
+        font-size: 40px !important;
+    }
+    .six_inputs{
+        text-align: center !important;
+        font-size: 20px !important;
+    }
+    .footer_buttom{
+        width: 100% !important;
+        font-size: 30px !important;
+    }
+}

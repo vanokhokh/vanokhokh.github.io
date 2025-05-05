@@ -1,0 +1,107 @@
+body {
+    background-color: #F5F5F5;
+}
+@font-face {
+    font-family: "titlefont";
+    src: url(./fonts/font_for_title.ttf)
+}
+@font-face {
+    font-family: "textFont";
+    src: url(./fonts/font_for_texst.ttf);
+}
+.titleFont{
+    font-family:"titlefont";
+}
+.textFont{
+    font-family: "textFont";
+}
+/*@@@@@@@@@@@@@@@ - end of body - @@@@@@@@@@@@@@@*/
+nav{
+    background-color: #F5F5F5;
+    animation-name: bodybd;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+ul a:hover{
+    color: white !important;
+    background-color: rgb(162, 96, 40);
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+.inputs{
+    outline: none !important;
+    border: none !important;
+    border-bottom: 2px solid black !important;
+    background-color: #F5F5F5;
+}
+textarea{
+    resize: none !important;
+    width: 510px;
+}
+.colum_six{
+    margin-top: 50px;
+    animation-name: contactinput;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+.colum_six2{
+    margin-top: 70px;
+}
+.content_button{
+    outline: none;
+    width: 515px;
+}
+.content_button:hover{
+    color: white !important;
+    transition-duration: 0.5s !important;
+    background-color: #A26028 !important;
+}
+.six_inputss{
+    margin-top: 150px !important;
+    animation-name: contactinput;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes contactinput{
+    from{opacity: 0.0;}
+    to{opacity: 1.0;}
+}
+.six_page_inputs input, textarea{
+    border: none;
+    border-bottom: 1px solid white !important;
+    outline: none;
+}
+.six_inputs input, textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit !important;
+    border-bottom: 2px solid black !important;
+}
+.footer_buttom{
+    width: 50%;
+}
+.footer_buttom:hover{
+    border-radius: 30px !important;
+    width: 51% !important;
+    transition-duration: 0.3s !important;
+}
+/*@@@@@@@@@@@@@@@ - start screen for tablet - @@@@@@@@@@@@@@@*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .footer_buttom{
+        width: 80%;
+    }
+}
+/*@@@@@@@@@@@@@@@ - start screen for mobile - @@@@@@@@@@@@@@@*/
+@media screen and (max-width: 768px) {
+    .navbar_title{
+        padding: 0px !important;
+    }
+    .six_inputsss{
+        margin-top: 5px !important;
+        text-align: center !important;
+    }
+    .footer_buttom{
+        width: 100% !important;
+    }
+}
